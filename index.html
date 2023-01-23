@@ -20,16 +20,47 @@
             <a href="https://unsplash.com/photos/k1A6NuN66bc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
     </div>
     <div class="form">
-        <div class="welcome">Welcome to Valbona Stay. We're pleased to have you in our midst. 
+        <div class="welcome gray">Welcome to Valbona Stay. We're pleased to have you in our midst. 
             <br>Before continuing with the booking proccess, please fill out the visitor's form. 
         </div>
         <form action="">
             <h2>Welcome!</h2>
-            <label for="first-name">First name: </label>
-            <input type="text" id="first-name">
-            <label for="last-name">First name: </label>
-            <input type="text" id="first-name">
+            <fieldset>
+                <div class="lab">
+                    <label for="first-name">FIRST NAME: </label>
+                    <input type="text" id="first-name">
+                </div>
+                <div class="lab">
+                    <label for="last-name">LAST NAME: </label>
+                    <input type="text" id="last-name">
+                </div>
+            </fieldset>
+            <fieldset>   
+                <div class="lab">
+                    <label for="email">EMAIL: </label>
+                    <input type="email" id="email">
+                </div>  
+                <div class="lab">
+                    <label for="phone-number">PHONE NUMBER: </label>
+                    <input type="tel" id="phone-number">
+                </div>
+            </fieldset> 
+            <fieldset>   
+                <div class="lab">
+                    <label for="password">PASSWORD: </label>
+                    <input type="password" id="password" onkeyup="passConfirm()">
+                </div>
+                <div class="lab">
+                    <label for="conf-password">CONFIRM PASSWORD: </label>
+                    <input type="password" id="conf-password" onkeyup="passConfirm()">
+                </div>
+            </fieldset> 
+            <span id="Message"></span>
         </form>
+        <div class="gray">
+            <button>Create Account</button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
